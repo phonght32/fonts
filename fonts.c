@@ -3,7 +3,7 @@
 
 #define FONT_ASCII_OFFSET 		0x20
 
-int get_font(char c, font_size_t size, font_t *font)
+int get_font(char c, font_type_t type, font_t *font)
 {
 	int idx, byte_per_row, num_row, max_width;
 
@@ -11,8 +11,8 @@ int get_font(char c, font_size_t size, font_t *font)
 		return -1;
 	}
 
-	switch (size) {
-	case FONT_SIZE_5x7:
+	switch (type) {
+	case FONT_TYPE_5x7:
 		byte_per_row = 1;
 		num_row = 7;
 		idx = c - FONT_ASCII_OFFSET;
@@ -44,7 +44,7 @@ int get_font(char c, font_size_t size, font_t *font)
 		font->width = max_width;
 		break;
 
-	case FONT_SIZE_11x15:
+	case FONT_TYPE_11x15:
 		byte_per_row = 2;
 		num_row = 15;
 		idx = c - FONT_ASCII_OFFSET;

@@ -38,10 +38,10 @@ extern "C" {
 #define FONT_11x15_NUM_MEMBER 		(96)   		/*!< Num char supported */
 
 typedef enum {
-	FONT_SIZE_5x7 = 0,							/*!< Font 5x7 */
-	FONT_SIZE_11x15,							/*!< Font 11x15 */
-	FONT_SIZE_MAX
-} font_size_t;
+	FONT_TYPE_5x7 = 0,							/*!< Font 5x7 */
+	FONT_TYPE_11x15,							/*!< Font 11x15 */
+	FONT_TYPE_MAX
+} font_type_t;
 
 typedef struct {
 	char 			data[FONT_MAX_DATA_LEN];	/*!< Data */
@@ -54,14 +54,14 @@ typedef struct {
 /*
  * @brief	Get data from ASCII with font type.
  * @param   c Character ASCII format.
- * @param 	size Font size
+ * @param 	type Font type
  * @param  	font Pointer to font.
  * @return 
  * 		- (-1): Pointer to output font is null.
  * 		- 0: Input character is out of range.
  * 		- Others: Font width.
  */
-int get_font(char c, font_size_t size, font_t *font);
+int get_font(char c, font_type_t type, font_t *font);
 
 extern const char font5x7_ref[FONT_5x7_NUM_MEMBER][FONT_5x7_NUM_BYTE];
 extern const char font11x15_ref[FONT_11x15_NUM_MEMBER][FONT_11x15_NUM_BYTE];
