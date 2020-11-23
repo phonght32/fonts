@@ -20,6 +20,9 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+#ifndef _FONT_H_
+#define _FONT_H_
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -69,3 +72,5 @@ extern const char font11x15_ref[FONT_11x15_NUM_MEMBER][FONT_11x15_NUM_BYTE];
 #ifdef __cplusplus
 }
 #endif
+
+#endif /* _FONT_H_ */
