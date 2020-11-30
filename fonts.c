@@ -3,6 +3,9 @@
 
 #define FONT_ASCII_OFFSET 		0x20
 
+extern const char font5x7_ref[FONT_5x7_NUM_MEMBER * FONT_5x7_NUM_BYTE];
+extern const char font11x15_ref[FONT_11x15_NUM_MEMBER * FONT_11x15_NUM_BYTE];
+
 int get_font(char c, font_size_t size, font_t *font)
 {
 	int idx, byte_per_row, num_row, max_width;
@@ -22,7 +25,7 @@ int get_font(char c, font_size_t size, font_t *font)
 		font->data_len = num_row * byte_per_row;
 		font->height = num_row;
 		font->ascii = c;
-		memcpy(font->data, (char*)&font5x7_ref[idx][0], font->data_len);
+		memcpy(font->data, (char*)&font5x7_ref[idx * FONT_5x7_NUM_BYTE], font->data_len);
 
 		if (font->ascii == 0x20) {
 			font->width = 3;
@@ -54,7 +57,7 @@ int get_font(char c, font_size_t size, font_t *font)
 		font->data_len = num_row * byte_per_row;
 		font->height = num_row;
 		font->ascii = c;
-		memcpy(font->data, (char*)&font11x15_ref[idx][0], font->data_len);
+		memcpy(font->data, (char*)&font11x15_ref[idx * FONT_11x15_NUM_BYTE], font->data_len);
 
 		if (font->ascii == 0x20) {
 			font->width = 6;

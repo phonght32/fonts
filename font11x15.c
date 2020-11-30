@@ -1,7 +1,7 @@
 #include "fonts.h"
 
 /* Font 11x15 ascii table */
-const char font11x15_ref[FONT_11x15_NUM_MEMBER][FONT_11x15_NUM_BYTE] = {
+const char font11x15_ref[FONT_11x15_NUM_MEMBER * FONT_11x15_NUM_BYTE] = {
     /* space (32)*/
     {
         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
