@@ -1,6 +1,7 @@
 #include "fonts.h"
 #include "stdbool.h"
 
+#define FONT_BIT(x) 			((char)0x01 << x)
 #define FONT_ASCII_OFFSET 		0x20
 
 extern const char font5x7_ref[FONT_5x7_NUM_MEMBER * FONT_5x7_NUM_BYTE];

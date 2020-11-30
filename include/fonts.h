@@ -32,7 +32,6 @@ extern "C" {
 #include <stdlib.h>
 #include <string.h>
 
-#define FONT_BIT(x) 				((char)0x01 << x)
 #define FONT_MAX_DATA_LEN 			50
 
 #define FONT_5x7_NUM_BYTE 			(7)        	/*!< Bytes lenght data */
