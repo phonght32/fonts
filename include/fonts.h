@@ -59,15 +59,12 @@ typedef struct {
  * @param   c Character ASCII format.
  * @param 	size Font size
  * @param  	font Pointer to font.
- * @return 
+ * @return
  * 		- (-1): Pointer to output font is null.
  * 		- 0: Input character is out of range.
  * 		- Others: Font width.
  */
 int get_font(char c, font_size_t size, font_t *font);
-
-extern const char font5x7_ref[FONT_5x7_NUM_MEMBER][FONT_5x7_NUM_BYTE];
-extern const char font11x15_ref[FONT_11x15_NUM_MEMBER][FONT_11x15_NUM_BYTE];
 
 #ifdef __cplusplus
 }
