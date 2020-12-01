@@ -69,7 +69,7 @@ int get_font(char c, font_size_t size, font_t *font)
 		for (int row = 0; row < (int)font->height; row++) {
 			int _width = 8 * byte_per_row;
 			bool out = false;
-			for (int byte = 0; byte < byte_per_row; byte++) {
+			for (int byte = 1; byte > -1; byte--) {
 				for (int bit = 0; bit < 8; bit++) {
 					if ((font->data[byte + row * 2] & FONT_BIT(bit)) == FONT_BIT(bit)) {
 						out = true;
