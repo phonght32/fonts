@@ -34,14 +34,15 @@ extern "C" {
 
 #define FONT_MAX_DATA_LEN 			50
 
-#define FONT_5x7_NUM_BYTE 			(7)        	/*!< Bytes lenght data */
-#define FONT_5x7_NUM_MEMBER 		(96)     	/*!< Num char supported */
-#define FONT_11x15_NUM_BYTE 		(15 * 2) 	/*!< Bytes lenght data */
-#define FONT_11x15_NUM_MEMBER 		(96)   		/*!< Num char supported */
+#define FONT_5x8_NUM_BYTE 			(8)        	/*!< Bytes lenght data */
+#define FONT_5x8_NUM_MEMBER 		(96)     	/*!< Num char supported */
+
+#define FONT_12x16_NUM_BYTE 		(16 * 2) 	/*!< Bytes lenght data */
+#define FONT_12x16_NUM_MEMBER 		(96)   		/*!< Num char supported */
 
 typedef enum {
-	FONT_SIZE_5x7 = 0,							/*!< Font 5x7 */
-	FONT_SIZE_11x15,							/*!< Font 11x15 */
+	FONT_SIZE_5x8 = 0,							/*!< Font 5x8 */
+	FONT_SIZE_12x16,							/*!< Font 12x16 */
 	FONT_SIZE_MAX
 } font_size_t;
 
