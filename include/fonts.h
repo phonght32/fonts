@@ -32,7 +32,7 @@ extern "C" {
 #include <stdlib.h>
 #include <string.h>
 
-#define FONT_MAX_DATA_LEN 			65
+#define FONT_MAX_DATA_LEN 			256
 
 #define FONT_5x8_NUM_BYTE 			(8)        	/*!< Bytes lenght data */
 #define FONT_5x8_NUM_MEMBER 		(96)     	/*!< Num char supported */
@@ -43,10 +43,14 @@ extern "C" {
 #define FONT_16x32_NUM_BYTE 		(32 * 2)	/*!< Bytes lenght data */
 #define FONT_16x32_NUM_MEMBER 		(96)		/*!< Num char supported */
 
+#define FONT_25x57_NUM_BYTE 		(57 * 4)	/*!< Bytes lenght data */
+#define FONT_25x57_NUM_MEMBER 		(96)		/*!< Num char supported */
+
 typedef enum {
 	FONT_SIZE_5x8 = 0,							/*!< Font 5x8 */
 	FONT_SIZE_12x16,							/*!< Font 12x16 */
 	FONT_SIZE_16x32,							/*!< Font 16x32 */
+	FONT_SIZE_25x57,							/*!< Font 25x57 */
 	FONT_SIZE_MAX
 } font_size_t;
 
