@@ -35,22 +35,22 @@ extern "C" {
 #define FONT_MAX_DATA_LEN 			256
 
 #define FONT_5x8_NUM_BYTE 			(8)        	/*!< Bytes lenght data */
-#define FONT_5x8_NUM_MEMBER 		(96)     	/*!< Num char supported */
+#define FONT_5x8_NUM_MEMBER 		(97)     	/*!< Num char supported */
 
 #define FONT_9x16_NUM_BYTE 			(16 * 2) 	/*!< Bytes lenght data */
-#define FONT_9x16_NUM_MEMBER 		(96)   		/*!< Num char supported */
+#define FONT_9x16_NUM_MEMBER 		(97)   		/*!< Num char supported */
 
 #define FONT_12x16_NUM_BYTE 		(16 * 2) 	/*!< Bytes lenght data */
-#define FONT_12x16_NUM_MEMBER 		(96)   		/*!< Num char supported */
+#define FONT_12x16_NUM_MEMBER 		(97)   		/*!< Num char supported */
 
 #define FONT_14x30_NUM_BYTE 		(30 * 2) 	/*!< Bytes lenght data */
 #define FONT_14x30_NUM_MEMBER 		(97)   		/*!< Num char supported */
 
 #define FONT_16x32_NUM_BYTE 		(32 * 2)	/*!< Bytes lenght data */
-#define FONT_16x32_NUM_MEMBER 		(96)		/*!< Num char supported */
+#define FONT_16x32_NUM_MEMBER 		(97)		/*!< Num char supported */
 
 #define FONT_25x57_NUM_BYTE 		(57 * 4)	/*!< Bytes lenght data */
-#define FONT_25x57_NUM_MEMBER 		(96)		/*!< Num char supported */
+#define FONT_25x57_NUM_MEMBER 		(97)		/*!< Num char supported */
 
 #define FONT_SYMBOL_DEGREE 			128
 
